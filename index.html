@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
-    crossorigin="anonymous">
-    <title>Welcome to ABC Learning Centre</title>
-</head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <title>TECH Learning Centre</title>
+</head>
 
 <body>
-<!-- Showcase & Nav -->
-<div id="showcase">
+
+  <!------------------------------------------------->
+  <!------------------- Hero & Nav ------------------>
+  <!------------------------------------------------->
+
+  <div class="heroNavBar">
     <header>
-        <nav class='cf'>
-                <ul class='cf'>
-                  <li class="hide-on-small">
-                    <a href="#showcase">ABC</a>
-                  </li>
-                  <li>
-                    <a href='#aboutus'>About Us</a>
-                  </li>
-                  <li>
-                    <a href='#courses'>Courses</a>  
-                  </li>
-                  <li>
-                    <a href='#contactus'>Contact Us</a>
-                  </li>
-                  <li>
-                    <a href='#register'>Register</a>
-                  </li>
-                </ul>
-                <a href='#' id='openup'>E-Viet</a>
-              </nav>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li class="hide-on-small">
+            <a href="#">TECH</a>
+          </li>
+          <li>
+            <a href='courses.html'>Courses</a>
+          </li>
+          <li>
+            <a href='register.html'>Register</a>
+          </li>
+          <li>
+            <a href='#courses'>About</a>
+          </li>
+          <li>
+            <a href=''>Contact</a>
+          </li>
+        </ul>
+        <a href='#' id='openup'>TECH</a>
+      </nav>
     </header>
-
-
-</div>
-
-
-<div class="section-main container" id="section-container">
-    <h1>ABC Learning Centre</h1>
-    <h2>Your solution to IT</h2>
-    <p class="lead hide-on-small">
-        We at ABC provides the best and most comprehensive way to learn IT.
-    </p>
-
-<!-- Courses Section -->
-
-<section id="courses" class="section light-bg">
-    <div class="container">
-        <h3>Learn your future</h3>
-        <p class="lead">With our team of industry leaders, we teached you what the IT industry needs and wants. Preparing you for what is ahead.
-        </p>
-        <a href="register.html" target="_blank" class="btn btn-secondary">Register Now!</a>
-        <hr>
-        <img src="images/blond-cellphone-coffee-1076814.jpg" alt="">
-    </div>
-</section>
-
-
-
-<!-- Register Section -->
-<section id="register" class="section bg-light">
-  <div class="container">
-    <div class="gift-cards">
-      <div>
-      <img src="images/blur-code-coding-270408.jpg" alt="">
-    </div>
-    <div>
-      <h2>Register Now!</h2>
-      <p>
-        Fass free and simple to get started.
+    <div class="section-main container" id="section-container">
+      <h1>TECH Learning Centre</h1>
+      <p class="lead hide-on-small">
+        We at TECH provides the best and most comprehensive way to learn IT.
       </p>
-      <p>Having doubts? Ask us.</p>
-      <hr>
-      <a href="#" class="text-secondary">
-        <i class="fas fa-chevron-right"></i>Start Today!
-      </a>
     </div>
   </div>
-</div>
-</section>
-</div>
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="footer-cols">
-      <ul>
-        <li>Courses</li>
-        <li>
+
+  <!------------------------------------------------->
+  <!---------------- About Us Section --------------->
+  <!------------------------------------------------->
+
+  <section id="courses" class="section light-bg">
+    <h3>Learn From Industry Experts</h3>
+    <div class="row">
+      <div class="column left">
+        <p class="lead">Get a deep and broad knowledge from subject matter experts with real world experiences.
+          <br>
+          Preparing you for what is ahead.
+        </p>
+        <a href="aboutus.html" class="btn btn-secondary aboutUsBtn">Meet The Team!</a>
+      </div>
+      <div class="column right">
+        <img src="images/blond-cellphone-coffee-1076814.jpg" alt="" class="aboutUsImg">
+      </div>
+  </section>
+
+  <!------------------------------------------------->
+  <!-----------Courses & Register Cards-------------->
+  <!------------------------------------------------->
+
+  <section id="cards">
+    <div class="row">
+      <div class="columnLeft">
+        <a href="courses.html"><img src="/images/Babyblue.png" alt="" class="coursesImgBtn"></a>
+
+
+
+
+      </div>
+      <div class="columnRight">
+        <a href="register.html"><img src="/images/Babyblue.png" alt="" class="coursesImgBtn"></a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--------------------------------------------------->
+  <!---------------- Register Section ----------------->
+  <!--------------------------------------------------->
+
+  <section id="register" class="section bg-light">
+    <div class="container">
+      <div class="gift-cards">
+        <div>
+          <h2>Register Now!</h2>
+          <p>
+            Fass free and simple to get started.
+          </p>
+          <p>Having doubts? Ask us.</p>
+          <hr>
+          <a href="#" class="text-secondary">
+            <i class="fas fa-chevron-right"></i>Start Today!
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-cols">
+        <ul>
+          <li>Courses</li>
+          <li>
             <a href='#learning'>List</a>
           </li>
           <li>
@@ -125,38 +153,36 @@
         </ul>
 
         <ul>
-            <li>About ABC</li>
-            <li>
-              <a href="#">The Team</a>
-            </li>
-            <li>
-              <a href="#">What We Do</a>
-            </li>
-            <li>
-              <a href="#">Follow Us!</a>
-            </li>
-            <li>
-              <a href="#">Like & Share</a>
-            </li>
-            <li>
-              <a href="#">Subscribe</a>
-            </li>
-          </ul>
+          <li>About ABC</li>
+          <li>
+            <a href="#">The Team</a>
+          </li>
+          <li>
+            <a href="#">What We Do</a>
+          </li>
+          <li>
+            <a href="#">Follow Us!</a>
+          </li>
+          <li>
+            <a href="#">Like & Share</a>
+          </li>
+          <li>
+            <a href="#">Subscribe</a>
+          </li>
+        </ul>
 
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom text-center">
-    Copyright &copy; 2019 ABC Learning Centre all rights reserved.
-  </div>
-</footer>
 
+    <div class="footer-bottom text-center">
+      Copyright &copy; 2019 ABC Learning Centre all rights reserved.
+    </div>
+  </footer>
 
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 
-        <script
-        src="http://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-        <script src="main.js"></script>
-    
 </body>
+
 </html>
