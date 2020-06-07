@@ -40,7 +40,6 @@ $(document).ready(function(){
 
 var lasturl="";
 
-
 function checkURL(hash)
 {
 	if(!hash) hash=window.location.hash;
@@ -61,7 +60,6 @@ function checkURL(hash)
 		}
 	}
 }
-
 
 function loadPage(url)
 {

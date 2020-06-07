@@ -9,6 +9,10 @@
   --light-color: #f4f4f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #f4f4f4;
@@ -48,12 +52,6 @@ header {
 section#contactus {
   background: url('images/connection-contemporary-data-450035.jpg') no-repeat bottom/cover;
   padding: 10rem 0;
-}
-
-.gift-cards {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Showcase */
@@ -104,7 +102,11 @@ section#contactus {
 
 .aboutUsImg {
   width: 75%;
-  box-shadow: 1.5px 2.5px #cdcdcd
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+  0 2px 2px rgba(0,0,0,0.12),
+  0 4px 4px rgba(0,0,0,0.12),
+  0 8px 8px rgba(0,0,0,0.12),
+  0 12px 12px rgba(0,0,0,0.12),
 }
 
 #cards {
@@ -112,13 +114,16 @@ section#contactus {
   text-align: center;
 }
 
-#cards.row {
-  text-align: center;
-}
-
 .columnLeft,.columnRight {
   padding: 2rem;
   width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columnLeft:hover,.columnRight:hover {
+  transform: scale(1.3);
 }
 
 /* coursesnav*/
@@ -172,13 +177,19 @@ section#contactus {
 
 }
 
+.gift-cards h1 {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 350px;
+}
+
 /* Footer */
 footer .footer-cols {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  text-align: left;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -303,6 +314,23 @@ nav a#openup {
   display: none;
 }
 
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+  background-color: #87CEEB;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
@@ -374,20 +402,3 @@ nav a#openup {
     position: relative;
   }
 }
-
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  zoom: 1;
-  background-color: #87CEEB;
-}
-
-/* For IE 6/7 (trigger hasLayout) */
