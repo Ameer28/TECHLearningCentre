@@ -1,44 +1,79 @@
 <html>
-<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
+
 <head>
-    <title>Module 1 Project</title>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Now!</title>
 </head>
 
 <body>
     <div id="register">
-    <h1>ABC Learning Centre</h1>
-    <form method="post" action="submit.jsp">
-        Student First Name:<br>
-        <input type="text" name="studentFirstName"><br>
-
-        Student Last Name:<br>
-        <input type="text" name="studentLastName"><br>
-
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-
-        Residential Address:<br>
-        <input type="textarea" name="residentialAddress"><br>
-
-        Phone Number:<br>
-        <input type="text" name="phoneNumber"><br>
-
-        Course Selected:<br>
-        <select name="courseSelected">
-            <option value="1">Programming in Java</option>
-            <option value="2">Programming in .Net</option>
-            <option value="3">Microsoft Office</option>
-            <option value="4">HTML</option>
-        </select>
-        <br>
-        <button type="submit">Submit</button>
-
-    </form>
+        <header>
+            <nav class='cf'>
+                <ul class='cf'>
+                    <li class="hide-on-small">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href='courses.html'>Courses</a>
+                    </li>
+                    <li>
+                        <a href='courses.html'>Details</a>
+                    </li>
+                    <li>
+                        <a href='courses.html'>Schedule</a>
+                    </li>
+                </ul>
+                <a href='#' id='openup'></a>
+            </nav>
+        </header>
+        <h1>TECH Learning Centre</h1>
+        <div id="formarea">
+            <form action=""></form>
+            <form method="post" action="submit.jsp" id="formAreaLeft">
+                <div id="firstName" class="formFields">
+                    First Name:
+                </div>
+                <div class="firstNameField" id="formBoxes">
+                    <input type="text" name="studentFirstName" required ></div>
+                <div id="lastName" class="formFields">
+                    Last Name:
+                </div>
+                <div class="lastNameField" id="formBoxes">
+                    <input type="text" name="studentLastName" required></div>
+                <div id="gender" class="formFields">
+                    Gender: </div>
+                <div class="genderSelect" id="formBoxes">
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </div>
+                <div id="address" class="formFields">
+                    Residential Address:</div>
+                <div class="residentialAddressBox" id="formBoxes">
+                    <textarea name="residentialAddress" id="residentialAddress" cols="25" rows="3"></textarea>
+                </div>
+                <div id="phoneNumber" class="formFields">
+                Phone Number: </div>
+                <div class="phoneNumberBox" id="formBoxes">
+                <input type="text" name="phoneNumber" required></div>
+        <div id="courseSelected" class="formFields">
+            Course Selected: </div>
+            <div class="selectCourseDropDown" id="formBoxes">
+            <select name="courseSelected">
+                <option value="1">HTML, CSS & JavaScript</option>
+                <option value="2">Java & SQL</option>
+                <option value="3">Front-End Frameworks</option>
+                <option value="4">Backend Frameworks</option>
+            </select>
+        </div>
+        <div id="submitBtn" class="formBoxes">
+            <button type="submit">Submit</button>
+        </form>        
+        </div>
+    </div>
+    </div>
     </div>
 </body>
 
