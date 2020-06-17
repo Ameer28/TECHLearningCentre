@@ -84,3 +84,4 @@ function loadPage(url)
 	});
 
 }
+
