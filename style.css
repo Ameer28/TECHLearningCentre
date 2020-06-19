@@ -173,15 +173,22 @@ section#contactus {
 
 .coursesOfferedGrid {
   display: grid;
-  grid-gap: 3rem;
+  /* grid-gap: 3rem; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px 250px 250px 250px;
 }
 
 .coursesGrid2,.coursesGrid3,.coursesGrid6,.coursesGrid7,.coursesGrid10,.coursesGrid11,.coursesGrid14,.coursesGrid15 {
   background-color: white;
-  box-shadow: 2.5px 5px 18px #888888;
+  /* box-shadow: 2.5px 5px 18px #888888; */
   text-align: center;
+  align-items: center;
+}
+
+.coursesGrid3,.coursesGrid7,.coursesGrid11,.coursesGrid15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .couresGridGFooter {
