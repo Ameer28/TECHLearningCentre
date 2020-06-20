@@ -4,10 +4,11 @@
 :root {
   --primary-color: #b90415;
   --primary-color-hover: #d3071b;
-  --secondary-color: #103063;
-  --secondary-color-hover: #143f85;
+  --secondary-color: #87CEEB;
+  --secondary-color-hover: #00ced1;
   --light-color: #f4f4f4;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -58,28 +59,35 @@ section#contactus {
 .heroNavBar {
   margin: 0;
   padding: 0;
-  background: url('/images/close-up-code-coding-160107.jpg') no-repeat center/cover;
+  background: url('/images/man-in-white-dress-shirt-sitting-on-black-rolling-chair-840996.jpg') no-repeat center/cover;
   width: 100%;
   height: 100vh;
   position: relative;
   overflow-y: hidden;
   box-shadow: 2.5px 5px 18px #888888;
+  z-index: 9999;
+
 }
 
 .heroNavBar .container {
   margin-top: 25vh;
-  color: white;
-  text-shadow: 2px 2px black;
+  color: black;
+  text-shadow: 2px 2px #87CEEB;
+  justify-content: left;
 }
 
 .heroNavBar h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   padding-top: 7rem;
   margin-bottom: 0;
+  text-align: left;
 }
 
-.heroNavBar h2 {
-  font-size: 2rem;
+.heroNavBar p  {
+  padding: 0;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 #courses h3 {
@@ -115,8 +123,12 @@ section#contactus {
     margin-bottom: 2rem;
 }
 
+.aboutUsBtn:hover {
+color: white;
+}
+
 #cards {
-  padding: 3rem;
+  padding: 6rem 4rem 6rem 4rem;
   text-align: center;
   background-color: #E0E0E0;
 }
@@ -172,15 +184,22 @@ section#contactus {
 
 .coursesOfferedGrid {
   display: grid;
-  grid-gap: 3rem;
+  /* grid-gap: 3rem; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px 250px 250px 250px;
 }
 
 .coursesGrid2,.coursesGrid3,.coursesGrid6,.coursesGrid7,.coursesGrid10,.coursesGrid11,.coursesGrid14,.coursesGrid15 {
   background-color: white;
-  box-shadow: 2.5px 5px 18px #888888;
+  /* box-shadow: 2.5px 5px 18px #888888; */
   text-align: center;
+  align-items: center;
+}
+
+.coursesGrid3,.coursesGrid7,.coursesGrid11,.coursesGrid15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .couresGridGFooter {
@@ -198,20 +217,18 @@ text-shadow: 2px 2px white;
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow-y: hidden;
-  box-shadow: 2.5px 5px 18px #888888;
-  text-shadow: 2px 2px black;
+  overflow-y: hidden;  
+}
+
+#register h1,h3,h4 {
+  color: black;
+  text-shadow: 2px 2px #87CEEB;
 }
 
 #register h1 {
   font-size: 4rem;
   margin-bottom: 0;
   text-align: center;
-  color: white;
-}
-
-#register h3,h4 {
-  color: white;
 }
 
 #registerPage {
@@ -232,10 +249,10 @@ text-shadow: 2px 2px white;
 
 #registerPage form {
   font-size: 1.5rem;
-  color: black;
+  color: white;
   width: 100%;
   height: 100vh;
-  text-shadow: 2px 2px white;
+  text-shadow: 2px 2px black;
 }
 
 #formarea {
@@ -301,7 +318,7 @@ footer .footer-cols ul li:first-child {
 
 footer .footer-bottom {
   background: white;
-  padding: 1rem;
+  padding: 0.25rem;
   font-size: 0.8rem;
 }
 
@@ -324,7 +341,7 @@ footer .footer-bottom {
 /* Button */
 .btn {
   padding: 1rem;
-  color: #fff;
+  color: black;
   display: inline-block;
 }
 
@@ -375,7 +392,7 @@ nav {
   height: 40px;
   width: 100%;
   background-color: #333;
-  color: #eee;
+  color: black;
   position: fixed;
 }
 
@@ -394,16 +411,16 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
-nav li:hover {
-  background-color: white;
+nav a:hover {
+  background-color: #00ced1;
 }
 
 nav li a:hover {
-  color: black;
+  color: white;
 }
 
 nav a#openup {
@@ -420,7 +437,7 @@ nav a#openup {
   clear: both;
 }
 
-.cf {
+.cf  {
   zoom: 1;
   background-color: #87CEEB;
 }
