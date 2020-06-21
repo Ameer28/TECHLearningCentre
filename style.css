@@ -2,8 +2,8 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #b90415;
-  --primary-color-hover: #d3071b;
+  --primary-color: #87CEEB;
+  --primary-color-hover: #00ced1;
   --secondary-color: #87CEEB;
   --secondary-color-hover: #00ced1;
   --light-color: #f4f4f4;
@@ -55,6 +55,10 @@ section#contactus {
   padding: 10rem 0;
 }
 
+#section-container {
+
+}
+
 /* Showcase */
 .heroNavBar {
   margin: 0;
@@ -66,7 +70,6 @@ section#contactus {
   overflow-y: hidden;
   box-shadow: 2.5px 5px 18px #888888;
   z-index: 9999;
-
 }
 
 .heroNavBar .container {
@@ -184,22 +187,52 @@ color: white;
 
 .coursesOfferedGrid {
   display: grid;
-  /* grid-gap: 3rem; */
+  grid-gap: 3rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px 250px 250px;
+  padding: 0 5rem 0 5rem;
 }
 
-.coursesGrid2,.coursesGrid3,.coursesGrid6,.coursesGrid7,.coursesGrid10,.coursesGrid11,.coursesGrid14,.coursesGrid15 {
-  background-color: white;
-  /* box-shadow: 2.5px 5px 18px #888888; */
+.coursesGrid1,.coursesGrid2,.coursesGrid3,.coursesGrid4,.coursesGrid5,.coursesGrid6,.coursesGrid7,.coursesGrid8,.coursesGrid9,.coursesGrid10,.coursesGrid11,.coursesGrid12,.coursesGrid13,.coursesGrid14,.coursesGrid15,.coursesGrid16,.coursesGrid17,.coursesGrid18,.coursesGrid19,.coursesGrid20 {
+  background: var(--primary-color);
+  box-shadow: 2.5px 5px 18px #888888;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.coursesGrid3,.coursesGrid7,.coursesGrid11,.coursesGrid15 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.coursesGrid1,.coursesGrid5,.coursesGrid9,.coursesGrid13,.coursesGrid17 {
+  background: var(--primary-color-hover);
+}
+
+.coursesGrid3,.coursesGrid7,.coursesGrid11,.coursesGrid15,.coursesGrid19 {
+  background: var(--primary-color-hover);
+}
+
+.coursesGrid1,.coursesGrid3 {
+  position: relative;
+  text-align: center;
+  color: var(--secondary-color-hover);
+}
+
+.coursesGrid2,.coursesGrid4 {
+  position: relative;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.coursesGrid1 img,.coursesGrid2 img,.coursesGrid3 img,.coursesGrid4 img {
+  filter: grayscale(100%);
+}
+
+.centeredText1,.centeredText2,.centeredText3,.centeredText4 {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px black;
 }
 
 .couresGridGFooter {
@@ -254,7 +287,7 @@ text-shadow: 2px 2px white;
   height: 100vh;
   text-shadow: 2px 2px black;
 }
-
+l
 #formarea {
   display: grid;
   grid-gap: 20px;
@@ -284,10 +317,15 @@ text-shadow: 2px 2px white;
   justify-self: right;
 }
 
-.gift-cards h1 {
+.gift-cards h1{
   text-align: center;
   margin-top: 100px;
-  padding-bottom: 350px;
+  padding-bottom: 10rem;
+}
+
+.gift-cards a:hover {
+  color: var(--primary-color);
+  text-shadow: 2px 2px black;
 }
 
 /* Footer */
