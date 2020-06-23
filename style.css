@@ -185,54 +185,21 @@ color: white;
   text-shadow: 2px 2px white;
 }
 
-.coursesOfferedGrid {
+.coursesOfferedGrid1 {
   display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 250px 250px 250px 250px;
-  padding: 0 5rem 0 5rem;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5rem;
+  padding: 0 40rem 0 40rem;
 }
 
-.coursesGrid1,.coursesGrid2,.coursesGrid3,.coursesGrid4,.coursesGrid5,.coursesGrid6,.coursesGrid7,.coursesGrid8,.coursesGrid9,.coursesGrid10,.coursesGrid11,.coursesGrid12,.coursesGrid13,.coursesGrid14,.coursesGrid15,.coursesGrid16,.coursesGrid17,.coursesGrid18,.coursesGrid19,.coursesGrid20 {
-  background: var(--primary-color);
-  box-shadow: 2.5px 5px 18px #888888;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.coursesGrid1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: var(--primary-color);
 }
 
-.coursesGrid1,.coursesGrid5,.coursesGrid9,.coursesGrid13,.coursesGrid17 {
-  background: var(--primary-color-hover);
-}
-
-.coursesGrid3,.coursesGrid7,.coursesGrid11,.coursesGrid15,.coursesGrid19 {
-  background: var(--primary-color-hover);
-}
-
-.coursesGrid1,.coursesGrid3 {
-  position: relative;
-  text-align: center;
-  color: var(--secondary-color-hover);
-}
-
-.coursesGrid2,.coursesGrid4 {
-  position: relative;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-.coursesGrid1 img,.coursesGrid2 img,.coursesGrid3 img,.coursesGrid4 img {
-  filter: grayscale(100%);
-}
-
-.centeredText1,.centeredText2,.centeredText3,.centeredText4 {
-  position: absolute;
-  font-size: 3rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px black;
+.coursesGrid2,.coursesGrid3,.coursesGrid4,.cousesGrid5 {
+  background-color: var(--primary-color-hover);
 }
 
 .couresGridGFooter {
