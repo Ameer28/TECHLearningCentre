@@ -151,7 +151,10 @@ color: white;
   transform: scale(1.1);
 }
 
-/* coursesnav*/
+/****************************************************/
+/******************** Courses *********************/
+/****************************************************/
+
 #coursesnav {
   margin: 0;
   padding: 0;
@@ -187,28 +190,143 @@ color: white;
 
 .coursesOfferedGrid1 {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5rem;
-  padding: 0 40rem 0 40rem;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  justify-content: center;
 }
 
 .coursesGrid1 {
   grid-row-start: 1;
   grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.coursesGrid1 {
+  position: relative;
+  text-align: center;
+}
+
+.coursesGrid1 img {
+  filter: grayscale(100%);
+}
+
+.coursesGrid1Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+.coursesGrid2,.coursesGrid3,.coursesGrid4,.coursesGrid5 {
   background-color: var(--primary-color);
 }
 
-.coursesGrid2,.coursesGrid3,.coursesGrid4,.cousesGrid5 {
+.coursesOfferedGrid2 {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  justify-content: center;
+}
+
+.coursesGrid6 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
   background-color: var(--primary-color-hover);
 }
+
+.coursesGrid7,.coursesGrid8,.coursesGrid9,.coursesGrid10 {
+  background-color: var(--primary-color);
+}
+
+.coursesGrid6 {
+  position: relative;
+  text-align: center;
+}
+
+.coursesGrid6 img {
+  filter: grayscale(100%);
+}
+
+.coursesGrid2Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: black;
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+.coursesOfferedGrid3 {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  justify-content: center;
+}
+
+.coursesGrid11 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color-hover);
+}
+
+.coursesGrid12,.coursesGrid13,.coursesGrid14,.coursesGrid15 {
+  background-color: var(--primary-color);
+}
+
+.coursesGrid11 {
+  position: relative;
+  text-align: center;
+}
+
+.coursesGrid11 img {
+  filter: grayscale(100%);
+}
+
+.coursesGrid3Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+
 
 .couresGridGFooter {
   padding: 5rem;
 }
+
 .coursesGridFooter h2 {
 text-align: center;
 text-shadow: 2px 2px white;
 }
+
+/***************************************************/
+/******************* Register **********************/
+/***************************************************/
 
 #register {
   margin: 0;
