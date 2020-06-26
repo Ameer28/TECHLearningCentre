@@ -8,6 +8,10 @@
     <title>Register Now!</title>
 </head>
 
+<!--------------------------------------->
+<!------------Navigation Bar------------->
+<!--------------------------------------->
+
 <body>
     <div id="registerPage">
         <header>
@@ -26,54 +30,82 @@
                 <a href='#' id='openup'></a>
             </nav>
         </header>
-        <h1>TECH Learning Centre</h1>
+
+        <!--------------------------------------->
+        <!--------------- Form ------------------>
+        <!--------------------------------------->
+
+        <h1>Register Now!</h1>
         <div id="formarea">
-            <form action=""></form>
-            <form method="post" action="submit.jsp" id="formAreaLeft">
-                <div id="firstName" class="formFields">
-                    First Name:
-                </div>
-                <div class="firstNameField" id="formBoxes">
-                    <input type="text" name="studentFirstName" required ></div>
-                <div id="lastName" class="formFields">
-                    Last Name:
-                </div>
-                <div class="lastNameField" id="formBoxes">
-                    <input type="text" name="studentLastName" required></div>
-                <div id="gender" class="formFields">
-                    Gender: </div>
-                <div class="genderSelect" id="formBoxes">
-                    <input type="radio" name="gender" value="male" required> Male
-                    <input type="radio" name="gender" value="female" required> Female
-                </div>
-                <div id="address" class="formFields">
-                    Residential Address:</div>
-                <div class="residentialAddressBox" id="formBoxes">
-                    <textarea name="residentialAddress" id="residentialAddress" cols="25" rows="3"></textarea>
-                </div>
-                <div id="phoneNumber" class="formFields">
-                Phone Number: </div>
-                <div class="phoneNumberBox" id="formBoxes">
-                <input type="text" name="phoneNumber" required></div>
-        <div id="courseSelected" class="formFields">
-            Course Selected: </div>
-            <div class="selectCourseDropDown" id="formBoxes">
-            <select name="courseSelected">
-                <option value="1">HTML, CSS & JavaScript</option>
-                <option value="2">Java & SQL</option>
-                <option value="3">Front-End Frameworks</option>
-                <option value="4">Backend Frameworks</option>
-            </select>
-        </div>
-        <div id="submitBtn" class="formBoxes">
-            <button type="submit" id="
+            <div class="formArea1">
+                <form action=""></form>
+            </div>
+            <div class="formArea2">
+                <form method="post" id="formAreaLeft">
+                    <div id="firstName" class="formFields">
+                        First Name:
+                    </div>
+                    <div class="firstNameField" id="formBoxes">
+                        <input type="text" name="studentFirstName" required></div>
+                    <div id="lastName" class="formFields">
+                        Last Name:
+                    </div>
+                    <div class="lastNameField" id="formBoxes">
+                        <input type="text" name="studentLastName" required></div>
+                    <div id="gender" class="formFields">
+                        Gender: </div>
+                    <div class="genderSelect" id="formBoxes">
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female" required> Female
+                    </div>
+                    <div id="address" class="formFields">
+                        Residential Address:</div>
+                    <div class="residentialAddressBox" id="formBoxes">
+                        <textarea name="residentialAddress" id="residentialAddress" cols="25" rows="3"></textarea>
+                    </div>
+                    <div id="phoneNumber" class="formFields">
+                        Phone Number: </div>
+                    <div class="phoneNumberBox" id="formBoxes">
+                        <input type="text" name="phoneNumber" required></div>
+                    <div id="courseSelected" class="formFields">
+                        Course Selected: </div>
+                    <div class="selectCourseDropDown" id="formBoxes">
+                        <select name="courseSelected">
+
+                            <optgroup label="Computer Engineering">
+                                <option value="1">Front-End Development</option>
+                                <option value="2">Backend Development</option>
+                                <option value="3">Frameworks</option>
+                                <option value="4">Mobile Development</option>
+                            </optgroup>
+
+                            <optgroup label="Data Science">
+                                <option value="1">Data Analysis</option>
+                                <option value="2">Machine Learning</option>
+                                <option value="3">Probability & Statistics</option>
+                                <option value="4">Python</option>
+                            </optgroup>
+                        
+                            <optgroup label="Networking & Security">
+                                <option value="1">Cloud Computing</option>
+                                <option value="2">Cyber Security</option>
+                                <option value="3">Data Management</option>
+                                <option value="4">Infrastructure</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+
+                    <div id="submitBtn" class="formBoxes">
+                        <button type="submit" id="
         submittedForm">Submit</button>
-        </form>        
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
     </div>
-    </div>
-    <script src="main.js"></script>
 </body>
 
 </html>
