@@ -216,15 +216,15 @@ color: white;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  color: white;
+  color: black;
 }
 
 .coursesGrid2,.coursesGrid3,.coursesGrid4,.coursesGrid5 {
-  background-color: var(--primary-color-hover);
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,11 +249,11 @@ color: white;
 }
 
 .coursesGrid7,.coursesGrid8,.coursesGrid9,.coursesGrid10 {
-  background-color: var(--primary-color-hover);
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +274,7 @@ color: white;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  color: white;
+  color: black;
 }
 
 .coursesOfferedGrid3 {
@@ -296,11 +296,11 @@ color: white;
 }
 
 .coursesGrid12,.coursesGrid13,.coursesGrid14,.coursesGrid15 {
-  background-color: var(--primary-color-hover);
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,7 +317,7 @@ color: white;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  color: white;
+  color: black;
 }
 
 .couresGridGFooter {
@@ -647,20 +647,43 @@ nav a#openup {
     display: none;
   }
 
-  #showcase {
-    height: 50vh;
+  .heroNavBar {
+    width: auto;
+    height: 100%
   }
 
-  #showcase .container {
-    margin-top: 10vh;
+  #section-container {
+    margin-top: 0;
+    height: 15rem;
   }
 
-  #showcase h1 {
-    font-size: 3rem;
-  }
-
-  #showcase h2 {
+  .section-main h1 {
     font-size: 1.5rem;
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  #cards {
+    padding: 0;
+  }
+
+  #cards .row {
+    display: block;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .columnLeft,.columnRight {
+    width: 65%;
+    font-size: 10px;
+    margin: 2rem;
+  }
+
+  #courses h3 {
+    font-size: 25px;
+  }
+
+  .aboutUsImg {
+    display: none;
   }
 
   nav {
@@ -683,12 +706,12 @@ nav a#openup {
     text-align: left;
     width: 100%;
     text-indent: 25px;
-    background: #333;
-    border-bottom: 1px solid #555;
+    background: var(--primary-color);
+    /* border-bottom: 1px solid black; */
   }
 
   nav a:hover {
-    background: #444;
+    background: var(--primary-color-hover);
   }
 
   nav a#openup:after {
@@ -708,7 +731,7 @@ nav a#openup {
 
   nav a#openup {
     display: block;
-    background-color: #333;
+    background-color: var(--primary-color);
     width: 100%;
     position: relative;
   }
