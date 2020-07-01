@@ -680,10 +680,27 @@ nav a#openup {
 
   #courses h3 {
     font-size: 25px;
+    margin: 0 0 0 0;
   }
 
   .aboutUsImg {
     display: none;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  .left {
+    margin: 0 0 0 0;
+  }
+
+  .right {
+    display: none;
+  }
+
+  #register {
+    display: block;
   }
 
   nav {
