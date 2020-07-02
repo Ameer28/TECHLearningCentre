@@ -731,6 +731,28 @@ nav a#openup {
     font-size: 15px;
   }
 
+  footer .footer-cols {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .footer-cols ul {
+    padding: 0;
+    font-size: 1px;
+  }
+
+  footer .footer-cols ul li:first-child {
+    font-size: 15px;
+  }
+
+  .footer-cols li {
+    font-size: 11px;
+  }
+
+  footer .footer-bottom {
+    font-size: 9px;
+  }
+
   nav {
     height: auto;
     border-bottom: 0;
