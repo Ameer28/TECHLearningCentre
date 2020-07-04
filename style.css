@@ -731,14 +731,74 @@ nav a#openup {
     font-size: 15px;
   }
 
+  .coursesOfferedGrid1 {
+    display: block;
+    margin: 2rem;
+  }
+
+  .coursesGrid1Text {
+    margin-top: 3rem;
+    font-size: 30px;
+  }
+
+  .coursesGrid2 {
+    padding-top: 6rem;
+  }
+
+  .coursesOfferedGrid2 {
+    display: block;
+    margin: 2rem;
+  }
+
+  .coursesGrid2Text {
+    margin-top: 3rem;
+    font-size: 30px;
+  }
+
+  .coursesGrid7 {
+    padding-top: 6rem;
+  }
+
+  .coursesOfferedGrid3 {
+    display: block;
+    margin: 2rem;
+  }
+
+  .coursesGrid3Text {
+    margin-top: 3rem;
+    font-size: 30px;
+  }
+
+  .coursesGrid3Text br {
+    display: none;
+  }
+
+  .coursesGrid12 {
+    padding-top: 6rem;
+  }
+
   footer .footer-cols {
     margin: 0;
     padding: 1rem 0 1rem 0;
   }
 
+  #coursesnav h1 {
+    font-size: 20px;
+  }
+
+  .coursesPageTitle {
+    padding: 2rem 0 0 0;
+  }
+
   .footer-cols ul {
     padding: 0;
     font-size: 1px;
+  }
+
+  #coursesnav h2 {
+    font-size: 18px;
+    text-shadow: none;
+    margin-top: 0;
   }
 
   footer .footer-cols ul li:first-child {
