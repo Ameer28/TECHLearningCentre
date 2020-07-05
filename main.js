@@ -12,7 +12,7 @@ $(function() {
       menu.removeAttr('style');
     }
   });
-  
+
   $('nav li').on('click', function(e) {                
     var w = $(window).width(); if(w < 480 ) {
       menu.slideToggle(); 
@@ -83,4 +83,13 @@ function loadPage(url)
 
 	});
 
+}
+
+function dropDown () {
+	var x = document.getElementById("coursesnav");
+	if (x.className === "topNav") {
+		x.className += "responsive";
+	} else {
+		x.className = "topNav";
+	}
 }
