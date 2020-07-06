@@ -912,4 +912,22 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+
+  #registerPage h1 {
+    font-size: 28px;
+    padding-top: 2rem;
+  }
+
+  #formAreaLeft {
+    grid-template-columns: 150px 150px;
+  }
+
+  #formBoxes {
+    padding: 0;
+  }
+
+  .formFields {
+    font-size: 14px;
+  }
+
 }
