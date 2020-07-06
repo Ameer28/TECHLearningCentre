@@ -899,11 +899,11 @@ nav a#openup {
     -webkit-transform: rotate(-90deg);
     /* Safari and Chrome */
     width: 30px;
-    height: 30px;
+    height: 35px;
     display: inline-block;
     position: absolute;
     right: 5px;
-    top: 20px;
+    top: 18px;
   }
 
   nav.cf a#openup {
@@ -911,6 +911,7 @@ nav a#openup {
     background-color: var(--primary-color);
     width: 100%;
     position: relative;
+    padding-top: 30px;
   }
 
   #registerPage h1 {
@@ -919,15 +920,24 @@ nav a#openup {
   }
 
   #formAreaLeft {
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 150px 170px;
   }
 
-  #formBoxes {
-    padding: 0;
+  #formBoxes input,textarea,select {
+    margin: 10px;
+    width: 100%;
   }
 
   .formFields {
     font-size: 14px;
+    width: 100%;
+  }
+
+  .genderSelect {
+    font-size: 16px;
+    width: 90%;
+    height: 50%;
+    display: inline-flex;
   }
 
 }
