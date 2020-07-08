@@ -940,4 +940,20 @@ nav a#openup {
     display: inline-flex;
   }
 
+  .aboutUs {
+    height: 7vh;
+  }
+
+  .theTeamHeader {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .aboutUsProfile p {
+  padding: 0;
+  width: 100%;
+  }
+
+  
+
 }
