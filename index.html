@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section 5: Advanced JavaScript: Objects and Functions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <title>TECH Learning Centre</title>
 </head>
+
 <body>
-    <h1>Section 5: Advanced JavaScript: Objects and Functions</h1>
-</body> 
-<script src="script.js"></script>
+
+  <!------------------------------------------------->
+  <!------------------- Hero & Nav ------------------>
+  <!------------------------------------------------->
+
+  <div class="heroNavBar">
+    <header>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li class="hide-on-small">
+            <a href="#">TECH</a>
+          </li>
+          <li>
+            <a href='courses.html'>Courses</a>
+          </li>
+          <li>
+            <a href='register.html'>Register</a>
+          </li>
+          <li>
+            <a href='#courses'>About</a>
+          </li>
+          <li>
+            <a href='#footer'>Contact</a>
+          </li>
+        </ul>
+        <a href='#' id='openup'></a>
+      </nav>
+    </header>
+    <div class="section-main container" id="section-container">
+      <h1>TECH Learning Centre</h1>
+      <p class="lead hide-on-small">
+        We at TECH provides the best and most comprehensive way to learn IT.
+      </p>
+    </div>
+  </div>
+
+  <!------------------------------------------------->
+  <!-----------Courses & Register Cards-------------->
+  <!------------------------------------------------->
+
+  <section id="cards">
+    <div class="row">
+      <div class="columnLeft">
+        <a href="courses.html"><img src="/images/person-using-macbook-pro-on-person-s-lap-1181298.jpg" alt=""
+            class="coursesImgBtn">
+          <div class="columnLeftText">
+            <h1>Find Courses</h1>
+            <p>Learn Frontend, Backend and Full-stack Programming</p>
+          </div>
+        </a>
+      </div>
+      <div class="columnRight">
+        <a href="register.html"><img src="/images/man-in-grey-sweater-holding-yellow-sticky-note-879109.jpg" alt=""
+            class="coursesImgBtn">
+          <h1>Register Now!</h1>
+          <p>Quick and simple to get you started</p>
+      </div>
+      </a>
+    </div>
+  </section>
+  <hr>
+  <!------------------------------------------------->
+  <!---------------- About Us Section --------------->
+  <!------------------------------------------------->
+
+  <section id="courses" class="section light-bg">
+    <h3>Learn From Industry Experts</h3>
+    <div class="row" style="margin-bottom: 2.5rem;">
+      <div class="column left">
+        <p class="lead">Get a deep and broad knowledge from subject matter experts with real world experiences.
+          <br>
+          Preparing you for what is ahead.
+        </p>
+        <a href="aboutus.html" class="btn btn-secondary aboutUsBtn">Meet The Team!</a>
+      </div>
+      <div class="column right">
+        <img src="images/blond-cellphone-coffee-1076814.jpg" alt="" class="aboutUsImg">
+      </div>
+  </section>
+
+  <!------------------------------------------------->
+  <!---------------- Ask Us Section ----------------->
+  <!------------------------------------------------->
+
+  <section id="register" class="section bg-light">
+    <div class="container">
+      <div class="gift-cards">
+        <h1>In doubt?
+          <a href="aboutus.html">
+            Ask us!</a>
+          <h1>
+            <h3>The bad news is time flies.
+              <br>The good news is you're the pilot.</h3>
+            <h4>Michael Altshuler</h4>
+      </div>
+    </div>
+  </section>
+  </div>
+  <!------------------------------------------------->
+  <!--------------------- Footer -------------------->
+  <!------------------------------------------------->
+  <footer>
+    <div class="container" id="footer">
+      <div class="footer-cols">
+        <ul>
+          <li>About</li>
+          <li>
+            <a href="aboutus.html">The Team</a>
+          </li>
+          <li>
+            <a href="aboutus.html">What We Do</a>
+          </li>
+        </ul>
+        <ul>
+          <li>Contact</li>
+          <li>
+            <a href="#">Email</a>
+          </li>
+          <li>
+            <a href="#">Locate</a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      Copyright &copy; 2020 TECH Learning Centre all rights reserved.
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
